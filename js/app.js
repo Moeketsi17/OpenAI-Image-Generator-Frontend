@@ -1,5 +1,3 @@
-
-
 function onSubmit(e) {
     e.preventDefault();
 
@@ -20,7 +18,7 @@ function onSubmit(e) {
 async function generateImageRequest(prompt, size){
     try {
         showSpinner()
-        const response = await fetch("/openai/generateimage", {
+        const response = await fetch("https://openai-image-generator-api-o0a5.onrender.com", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
