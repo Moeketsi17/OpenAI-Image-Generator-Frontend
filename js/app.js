@@ -23,6 +23,7 @@ async function generateImageRequest(prompt, size){
             headers: {
                 "Content-Type": "application/json"
             },
+            
             body: JSON.stringify({
                 prompt,
                 size
